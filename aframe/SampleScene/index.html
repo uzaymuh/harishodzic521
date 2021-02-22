@@ -17,12 +17,13 @@ init: function () {
 var elem = document.documentElement;
 var marker = document.querySelector("#marker");
 
-var button = document.getElementById("mutebutton");
-var Video_0 = document.getElementById("Video_Asset_0");
-var Plane_2 = document.getElementById("Plane_2");
-var Plane_3 = document.getElementById("Plane_3");
-var Plane_4 = document.getElementById("Plane_4");
-var Plane_5 = document.getElementById("Plane_5");
+var button = document.querySelector("#mutebutton");
+var Video_0 = document.querySelector("#Video_Asset_0");
+var Plane_2 = document.querySelector("#Plane_2");
+var Plane_3 = document.querySelector("#Plane_3");
+var Plane_4 = document.querySelector("#Plane_4");
+var Plane_5 = document.querySelector("#Plane_5");
+var Cube_6 = document.querySelector("#Cube_6");
 marker.addEventListener("markerFound", function (evt) {
 markerFound = 1;
 Video_0.play();
@@ -41,16 +42,19 @@ button.innerHTML="Unmute";
 Video_0.muted=true;
 }
 });
-Plane_2.addEventListener("click", function(evt){
+Plane_2.addEventListener("mousedown", function(evt){
 open("https://www.google.com");
 });
-Plane_3.addEventListener("click", function(evt){
+Plane_3.addEventListener("mousedown", function(evt){
 open("https://www.google.com");
 });
-Plane_4.addEventListener("click", function(evt){
+Plane_4.addEventListener("mousedown", function(evt){
 open("https://www.google.com");
 });
-Plane_5.addEventListener("click", function(evt){
+Plane_5.addEventListener("mousedown", function(evt){
+open("https://www.google.com");
+});
+Cube_6.addEventListener("mousedown", function(evt){
 open("https://www.google.com");
 });
 
@@ -93,7 +97,7 @@ if (markerFound == 1) {
             </button>
         </div>
 
-
+  
 
         <!-- <a-scene embedded arjs='debugUIEnabled: false; sourceType: video; sourceUrl:../../data/videos/headtracking.mp4;'> -->
             <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam' vr-mode-ui='enabled: false'>
@@ -122,6 +126,8 @@ if (markerFound == 1) {
 ></a-plane>
 <a-plane id="Plane_5" width="0.7" height="0.7" src="textures/internet-web-browser.png" class="intersectable" position="1.25 0 0.11" rotation="270 0 0" color="#FFFFFF" 
 ></a-plane>
+<a-box id="Cube_6" width="0.1" height="0.1" depth="0.1" class="intersectable" position="0 0 0" rotation="0 0 0" color="#FFFFFF" 
+></a-box>
 <!-- END: Unity Compiled Objects -->
 
 <!-- BEGIN: Bottom HTML -->
