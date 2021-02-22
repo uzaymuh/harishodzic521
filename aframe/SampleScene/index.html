@@ -19,6 +19,10 @@ var marker = document.querySelector("#marker");
 var fullbutton = document.querySelector("#fullscreen");
 var button = document.querySelector("#mutebutton");
 var Video_0 = document.querySelector("#Video_Asset_0");
+var Plane_2 = document.querySelector("#Plane_2");
+var Plane_3 = document.querySelector("#Plane_3");
+var Plane_4 = document.querySelector("#Plane_4");
+var Plane_5 = document.querySelector("#Plane_5");
 marker.addEventListener("markerFound", function (evt) {
 markerFound = 1;
 Video_0.play();
@@ -36,6 +40,18 @@ Video_0.muted=false;
 button.innerHTML="Unmute";
 Video_0.muted=true;
 }
+});
+Plane_2.addEventListener("mousedown", function(evt){
+open("https://www.google.com");
+});
+Plane_3.addEventListener("mousedown", function(evt){
+open("https://www.google.com");
+});
+Plane_4.addEventListener("mousedown", function(evt){
+open("https://www.google.com");
+});
+Plane_5.addEventListener("mousedown", function(evt){
+open("https://www.google.com");
 });
 
         fullbutton.addEventListener("click", function (evt) {
@@ -126,9 +142,17 @@ if (markerFound == 1) {
 <!-- END: Add Image Target (marker) -->
 
 <!-- BEGIN: Unity Compiled Objects -->
-<a-video width="1.6047" height="1" src="#Video_Asset_0" class="intersectable" position="0.7780001 0 -1.944" rotation="270 0 0" color="#FFFFFF" 
+<a-video width="1.6047" height="1" src="#Video_Asset_0" class="intersectable" position="0.797 0 -1.916" rotation="270 0 0" color="#FFFFFF" 
 ></a-video>
 <a-plane width="1" height="1" src="textures/Hariswebsite.png" class="intersectable" position="-0.693 0 -1.918" rotation="272.3378 0 0" color="#FFFFFF" 
+></a-plane>
+<a-plane width="0.7" height="0.7" src="textures/In-Blue-Logo.png.original.png" class="intersectable" position="1.24 0 -0.724" rotation="270 0 0" color="#FFFFFF" 
+></a-plane>
+<a-plane width="0.7" height="0.7" src="textures/sm-icons-instagram-glyph-logo 1.png" class="intersectable" position="-1.27 0 -0.754" rotation="270 0 0" color="#FFFFFF" 
+></a-plane>
+<a-plane width="0.7" height="0.7" src="textures/sm-icons-facebook-logo.png" class="intersectable" position="-1.27 0 0.106" rotation="270 0 0" color="#FFFFFF" 
+></a-plane>
+<a-plane width="0.7" height="0.7" src="textures/internet-web-browser.png" class="intersectable" position="1.25 0 0.11" rotation="270 0 0" color="#FFFFFF" 
 ></a-plane>
 <!-- END: Unity Compiled Objects -->
 
