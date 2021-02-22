@@ -19,11 +19,10 @@ var marker = document.querySelector("#marker");
 
 var button = document.querySelector("#mutebutton");
 var Video_0 = document.querySelector("#Video_Asset_0");
-var Plane_2 = document.querySelector("#Plane_2");
-var Plane_3 = document.querySelector("#Plane_3");
-var Plane_4 = document.querySelector("#Plane_4");
-var Plane_5 = document.querySelector("#Plane_5");
-var Cube_6 = document.querySelector("#Cube_6");
+var Cube_2 = document.querySelector("#Cube_2");
+var Cube_3 = document.querySelector("#Cube_3");
+var Cube_4 = document.querySelector("#Cube_4");
+var Cube_5 = document.querySelector("#Cube_5");
 marker.addEventListener("markerFound", function (evt) {
 markerFound = 1;
 Video_0.play();
@@ -42,20 +41,17 @@ button.innerHTML="Unmute";
 Video_0.muted=true;
 }
 });
-Plane_2.addEventListener("mousedown", function(evt){
-open("https://www.google.com");
+Cube_2.addEventListener("mousedown", function(evt){
+open("https://www.facebook.com/Mybusinesscard.nl");
 });
-Plane_3.addEventListener("mousedown", function(evt){
-open("https://www.google.com");
+Cube_3.addEventListener("mousedown", function(evt){
+open("https://www.linkedin.com/company/my-businesscard/");
 });
-Plane_4.addEventListener("mousedown", function(evt){
-open("https://www.google.com");
+Cube_4.addEventListener("mousedown", function(evt){
+open("https://www.instagram.com/mybusinesscard.nl/");
 });
-Plane_5.addEventListener("mousedown", function(evt){
-open("https://www.google.com");
-});
-Cube_6.addEventListener("mousedown", function(evt){
-open("https://www.google.com");
+Cube_5.addEventListener("mousedown", function(evt){
+open("https://www.mybusinesscard.nl/");
 });
 
 
@@ -97,7 +93,7 @@ if (markerFound == 1) {
             </button>
         </div>
 
-  
+
 
         <!-- <a-scene embedded arjs='debugUIEnabled: false; sourceType: video; sourceUrl:../../data/videos/headtracking.mp4;'> -->
             <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam' vr-mode-ui='enabled: false'>
@@ -110,23 +106,21 @@ if (markerFound == 1) {
 </a-assets>
 <!-- END: Unity Compiled Assets -->
 <!-- BEGIN: Add Image Target (marker) -->
-<a-marker id="marker" type="pattern" preset="custom" src="pattern-demoqr.patt" url="pattern-demoqr.patt" emitevents="true" button>
+<a-marker id="marker" type="pattern" preset="custom" src="pattern-fiverrqr.patt" url="pattern-fiverrqr.patt" emitevents="true" button>
 <!-- END: Add Image Target (marker) -->
 
 <!-- BEGIN: Unity Compiled Objects -->
-<a-video width="1.6047" height="1" src="#Video_Asset_0" class="intersectable" position="0.797 0 -1.916" rotation="270 0 0" color="#FFFFFF" 
+<a-video width="1.858916" height="1.1547" src="#Video_Asset_0" class="intersectable" position="0.946 0 -1.994" rotation="270 0 0" color="#FFFFFF" 
 ></a-video>
-<a-plane width="1" height="1" src="textures/Hariswebsite.png" class="intersectable" position="-0.693 0 -1.918" rotation="272.3378 0 0" color="#FFFFFF" 
+<a-plane width="1.3" height="1" src="textures/Hariswebsite.png" class="intersectable" position="-0.876 0 -1.924" rotation="272.3378 0 0" color="#FFFFFF" 
 ></a-plane>
-<a-plane id="Plane_2" width="0.7" height="0.7" src="textures/In-Blue-Logo.png.original.png" class="intersectable" position="1.24 0 -0.724" rotation="270 0 0" color="#FFFFFF" 
-></a-plane>
-<a-plane id="Plane_3" width="0.7" height="0.7" src="textures/sm-icons-instagram-glyph-logo 1.png" class="intersectable" position="-1.27 0 -0.754" rotation="270 0 0" color="#FFFFFF" 
-></a-plane>
-<a-plane id="Plane_4" width="0.7" height="0.7" src="textures/sm-icons-facebook-logo.png" class="intersectable" position="-1.27 0 0.106" rotation="270 0 0" color="#FFFFFF" 
-></a-plane>
-<a-plane id="Plane_5" width="0.7" height="0.7" src="textures/internet-web-browser.png" class="intersectable" position="1.25 0 0.11" rotation="270 0 0" color="#FFFFFF" 
-></a-plane>
-<a-box id="Cube_6" width="1" height="1" depth="0.1" class="intersectable" position="0 0 0" rotation="0 0 0" color="#FFFFFF" 
+<a-box id="Cube_2" width="0.56" height="0.1" depth="0.56" src="textures/sm-icons-facebook-logo.png" class="intersectable" position="1.153 0 -0.364" rotation="0 0 0" color="#FFFFFF" 
+></a-box>
+<a-box id="Cube_3" width="0.56" height="0.1" depth="0.56" src="textures/In-Blue-Logo.png.original.png" class="intersectable" position="-1.153 0 -0.364" rotation="0 0 0" color="#FFFFFF" 
+></a-box>
+<a-box id="Cube_4" width="0.56" height="0.1" depth="0.56" src="textures/sm-icons-instagram-glyph-logo 1.png" class="intersectable" position="-1.153 0 0.444" rotation="0 0 0" color="#FFFFFF" 
+></a-box>
+<a-box id="Cube_5" width="0.56" height="0.1" depth="0.56" src="textures/internet-web-browser.png" class="intersectable" position="1.153 0 0.444" rotation="0 0 0" color="#FFFFFF" 
 ></a-box>
 <!-- END: Unity Compiled Objects -->
 
